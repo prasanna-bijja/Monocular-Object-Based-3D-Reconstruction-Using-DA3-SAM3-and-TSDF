@@ -87,8 +87,8 @@ def main() -> None:
         "--timestamps-from",
         type=Path,
         default=Path(
-            "/export/data/pbijja/replicadata_habitatcollected/"
-            "apartment_0_capture_final2/trajectory_opencv.txt"
+            "/path_to_/replicadata_habitatcollected/"
+            "apartment_0_capture/trajectory_opencv.txt"
         ),
         help="TUM file whose first column provides matching frame timestamps.",
     )
