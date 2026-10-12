@@ -2,15 +2,15 @@
 
 This folder covers the DA3 stage of a monocular, object-based 3D reconstruction
 pipeline. DA3 takes ordered RGB frames and predicts depth, confidence, and camera
-poses. These outputs feed the later SAM3 + TSDF stages.
+poses. These outputs fused later with SAM3.
 
 ```text
 RGB frames
     |
     v
-Depth Anything 3 --> depth, confidence, intrinsics, extrinsics
+Depth Anything 3 --> depth, confidence, extrinsics
     |
-    +--> colored point cloud (sanity check)
+    +--> point cloud (sanity check)
     +--> camera trajectory (evaluation)
     |
     v
@@ -48,7 +48,7 @@ All commands below assume the `da3` environment is active.
 
 ## 2. Prepare the input
 
-Put all frames in one folder with zero-padded names. DA3 reads them in sorted order.
+Put all frames in one folder.
 
 ```text
 rgb/
@@ -71,8 +71,7 @@ da3 images rgb \
   --device cuda    # use --device cpu if no GPU is available
 ```
 
-I ran this on CPU because the GPU setup was not compatible. CPU is slower but gives
-the same outputs.
+I ran this on CPU because the GPU setup was not compatible. 
 
 DA3 resizes frames so both sides are divisible by 14 while keeping the aspect ratio.
 Here, 640 x 480 became 504 x 378. The output file 
@@ -103,15 +102,8 @@ python "$RECON_REPO/da3/scripts/extract_da3_outputs.py" \
 This writes `depth.npy`, `conf.npy`, `extrinsics.npy`, `intrinsics.npy`,
 `filenames.txt`, and `summary.json`.
 
-To load one frame without reading the whole sequence:
 
-```python
-import numpy as np
-depth = np.load("runs/rgb_da3_small/npy/depth.npy", mmap_mode="r")
-frame_57 = depth[57]
-```
-
-## 5. Check the outputs with a point cloud
+## 5. Camera TO 3D world point cloud
 
 Each pixel is lifted to 3D like this:
 
@@ -148,7 +140,9 @@ verification steps i followed:
 - DA3's own `scene.glb` looks sparse because it filters by confidence and keeps maximum of 
   one million points. Where original points from all poses fro above data are 57.8 million
   so the output loooked sparse.
-![pointcloud](https://github.com/prasanna-bijja/Monocular-Object-Based-3D-Reconstruction-Using-DA3-SAM3-and-TSDF/blob/main/da3/scripts/media/pointcloud.png))
+![pointcloud](https://github.com/prasanna-bijja/Monocular-Object-Based-3D-Reconstruction-Using-DA3-SAM3-and-TSDF/blob/main/da3/scripts/media/pointcloud.png)
+
+
 ## 6. Export the camera trajectory
 
 Convert DA3 poses to camera-to-world and write in TUM format
@@ -201,10 +195,7 @@ a different protocol.
 
 1. SAM3 gives per-frame object masks and IDs.
 2. DA3 depth is resized to the mask resolution.
-3. Masked pixels are lifted to 3D with the intrinsics.
-4. Camera-to-world poses put everything in one frame.
-5. A global TSDF fuses the background.
-6. Per-object TSDFs fuse each object where tracking is stable.
+3. Fuse SAM3 masks with depth.
 
 
 ## Troubleshooting
@@ -217,5 +208,5 @@ a different protocol.
 | Matplotlib cache not writable (evo, plots) | Read-only home/cache | `export MPLCONFIGDIR=/tmp/matplotlib-cache` |
 | `gsplat` warning | Optional package missing | Safe to ignore unless exporting Gaussian splats |
 | Unexpected `reference_view_strategy` keyword | Bug in some checkouts of `src/depth_anything_3/cli.py` | Update the repo, or change it to `ref_view_strategy=ref_view_strategy` |
-| Path errors | Spaces or trailing spaces in paths | Quote paths; no trailing space inside quotes; `cd` into folders, not files |
+
 
