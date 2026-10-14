@@ -138,11 +138,10 @@ verification steps i followed:
 - No confidence filtering by default. Added `--confidence-percentile` <40 to filter.
 - Doubled walls mean the poses are inconsistent.
 - DA3's own `scene.glb` looks sparse because it filters by confidence and keeps maximum of 
-  one million points. Where original points from all poses fro above data are 57.8 million
-  so the output loooked sparse.
+  one million points. Where original points from all poses fro above data are 57.8 million.
 ![pointcloud](https://github.com/prasanna-bijja/Monocular-Object-Based-3D-Reconstruction-Using-DA3-SAM3-and-TSDF/blob/main/da3/scripts/media/pointcloud.png)
 
-
+<!--
 ## 6. Export the camera trajectory
 
 Convert DA3 poses to camera-to-world and write in TUM format
@@ -191,7 +190,8 @@ For each frame:
 A separate scale per frame hides scale drift over time. If you report it, label it as
 a different protocol.
 
-## 9. Next stage: SAM3 + TSDF
+## 9. --> 
+Next stage: SAM3 + TSDF
 
 1. SAM3 gives per-frame object masks and IDs.
 2. DA3 depth is resized to the mask resolution.
