@@ -1,0 +1,22 @@
+basket
+blanket
+blinds
+book
+cabinet
+candle
+chair
+cushion
+potted plant
+lamp
+picture frame
+plant stand
+plate
+pot
+rug
+sofa
+stool
+switch
+table
+vase
+vent
+electrical outlet
