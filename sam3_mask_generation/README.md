@@ -28,13 +28,13 @@ Replace the RGB input paths below with the actual folders on your lab PC. The ou
 ```bash
 python sam3_mask_generation/extract_sam3_masks.py \
   --images /path/to/apartment_0/rgb \
-  --output /export/data/pbijja/SAM3/sam3_outputs/apartment_0 \
+  --output /path_to/sam3_outputs/apartment_0 \
   --prompts-file sam3_mask_generation/prompts/apartment_0_prompts.txt \
   --threshold 0.5 --max-frames 1
 
 python sam3_mask_generation/extract_sam3_masks.py \
   --images /path/to/room_0/rgb \
-  --output /export/data/pbijja/SAM3/sam3_outputs/room_0 \
+  --output /path_to/sam3_outputs/room_0 \
   --prompts-file sam3_mask_generation/prompts/room_0_prompts.txt \
   --threshold 0.5 --max-frames 1
 ```
