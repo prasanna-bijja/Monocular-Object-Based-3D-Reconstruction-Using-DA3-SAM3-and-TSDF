@@ -1,22 +1,31 @@
 basket
 blanket
-blinds
+window blinds
 book
 cabinet
 candle
+ceiling
 chair
 cushion
+door
+floor
 potted plant
 lamp
 picture frame
+pillar
 plant stand
 plate
-pot
+plant pot
 rug
 sofa
 stool
-switch
+light switch
 table
+plant leaves
 vase
-vent
+air vent
+wall
 electrical outlet
+window
+flowers
+dried flowers
