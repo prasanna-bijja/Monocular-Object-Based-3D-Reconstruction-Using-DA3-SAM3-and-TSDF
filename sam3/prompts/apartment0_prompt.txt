@@ -1,0 +1,55 @@
+base cabinet
+basket
+bathtub
+bed
+window
+blinds
+book
+bottle
+cabinet
+chair
+comforter
+stove
+steps
+dried flowers
+staircase
+flowers
+cooktop
+plant leaves
+countertop
+cup
+curtain
+cushion
+desk
+wooden door
+faucet
+glass window
+stair railing
+potted plant
+lamp
+major appliance
+floor mat
+nightstand
+panel
+painting
+poster
+pillow
+plant stand
+plate
+cooking pot
+storage rack
+refrigerator
+rug
+shower stall
+sink
+sofa
+stool
+light switch
+table
+toilet
+vase
+air vent
+wall cabinet
+window frame
+window pane
+electrical outlet
