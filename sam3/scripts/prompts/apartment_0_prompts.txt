@@ -1,0 +1,43 @@
+base cabinet
+basket
+bathtub
+bed
+blinds
+book
+bottle
+cabinet
+chair
+comforter
+cooktop
+countertop
+cup
+curtain
+cushion
+desk
+faucet
+handrail
+potted plant
+lamp
+major appliance
+mat
+nightstand
+panel
+picture frame
+pillow
+plant stand
+plate
+pot
+rack
+refrigerator
+rug
+shower stall
+sink
+sofa
+stool
+switch
+table
+toilet
+vase
+vent
+wall cabinet
+electrical outlet
