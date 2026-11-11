@@ -1,0 +1,210 @@
+{
+  "scene": "room_0",
+  "original_class_count": 29,
+  "prompt_count": 22,
+  "mapping": [
+    {
+      "replica_class_id": 1,
+      "replica_class_name": "basket",
+      "sam3_prompt": "basket",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 2,
+      "replica_class_name": "blanket",
+      "sam3_prompt": "blanket",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 3,
+      "replica_class_name": "blinds",
+      "sam3_prompt": "blinds",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 4,
+      "replica_class_name": "book",
+      "sam3_prompt": "book",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 5,
+      "replica_class_name": "cabinet",
+      "sam3_prompt": "cabinet",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 6,
+      "replica_class_name": "candle",
+      "sam3_prompt": "candle",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 7,
+      "replica_class_name": "ceiling",
+      "sam3_prompt": "ceiling",
+      "include": false,
+      "note": "Excluded from initial object-focused experiment"
+    },
+    {
+      "replica_class_id": 8,
+      "replica_class_name": "chair",
+      "sam3_prompt": "chair",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 9,
+      "replica_class_name": "cushion",
+      "sam3_prompt": "cushion",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 10,
+      "replica_class_name": "door",
+      "sam3_prompt": "door",
+      "include": false,
+      "note": "Excluded from initial object-focused experiment"
+    },
+    {
+      "replica_class_id": 11,
+      "replica_class_name": "floor",
+      "sam3_prompt": "floor",
+      "include": false,
+      "note": "Excluded from initial object-focused experiment"
+    },
+    {
+      "replica_class_id": 12,
+      "replica_class_name": "indoor-plant",
+      "sam3_prompt": "potted plant",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 13,
+      "replica_class_name": "lamp",
+      "sam3_prompt": "lamp",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 14,
+      "replica_class_name": "picture",
+      "sam3_prompt": "picture frame",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 15,
+      "replica_class_name": "pillar",
+      "sam3_prompt": "pillar",
+      "include": false,
+      "note": "Excluded from initial object-focused experiment"
+    },
+    {
+      "replica_class_id": 16,
+      "replica_class_name": "plant-stand",
+      "sam3_prompt": "plant stand",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 17,
+      "replica_class_name": "plate",
+      "sam3_prompt": "plate",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 18,
+      "replica_class_name": "pot",
+      "sam3_prompt": "pot",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 19,
+      "replica_class_name": "rug",
+      "sam3_prompt": "rug",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 20,
+      "replica_class_name": "sofa",
+      "sam3_prompt": "sofa",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 21,
+      "replica_class_name": "stool",
+      "sam3_prompt": "stool",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 22,
+      "replica_class_name": "switch",
+      "sam3_prompt": "switch",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 23,
+      "replica_class_name": "table",
+      "sam3_prompt": "table",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 24,
+      "replica_class_name": "unknown",
+      "sam3_prompt": "unknown",
+      "include": false,
+      "note": "Excluded from initial object-focused experiment"
+    },
+    {
+      "replica_class_id": 25,
+      "replica_class_name": "vase",
+      "sam3_prompt": "vase",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 26,
+      "replica_class_name": "vent",
+      "sam3_prompt": "vent",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 27,
+      "replica_class_name": "wall",
+      "sam3_prompt": "wall",
+      "include": false,
+      "note": "Excluded from initial object-focused experiment"
+    },
+    {
+      "replica_class_id": 28,
+      "replica_class_name": "wall-plug",
+      "sam3_prompt": "electrical outlet",
+      "include": true,
+      "note": ""
+    },
+    {
+      "replica_class_id": 29,
+      "replica_class_name": "window",
+      "sam3_prompt": "window",
+      "include": false,
+      "note": "Excluded from initial object-focused experiment"
+    }
+  ]
+}
